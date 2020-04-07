@@ -1,0 +1,10 @@
+9382956bd2e700b8be2233d053af52e1 *DESCRIPTION
+27abef5a0ea89fa7da0f7dd3569dc5f9 *NAMESPACE
+9230b140d7619d4218e7e42d090b33bf *R/Functions_EWS.R
+702b210e9b4d1c214837fe322af58ee4 *data/data_USA.rda
+c7eabd0c46e7c6c8ca24f71b66e019a4 *data/data_panel.rda
+abc8e7320509907fcc57c95a70b6de46 *man/Logistic_Estimation.Rd
+bd653235f02ffeae62b3ae28ce7d47ac *man/Matrix_lag.Rd
+1f5b461d006ac52f5203580b11b5b629 *man/Vector_lag.Rd
+e6f3edce82f199ddb838ea3881c4712f *man/data_USA.Rd
+93b585a67fd7138dc202b89e54a9c761 *man/data_panel.Rd

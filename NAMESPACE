@@ -1,0 +1,5 @@
+
+exportPattern("^[[:alpha:]]+")
+
+    importFrom("stats", "optim", "pnorm")
+    importFrom("numDeriv", "hessian")
