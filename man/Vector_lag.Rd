@@ -28,6 +28,8 @@ A numeric Vector.
 
 \examples{
 
+# NOT RUN {
+
 # Initialize the following vector
 vector_example <- as.vector(1:10)
 
@@ -39,4 +41,5 @@ new_vector
 #> new_vector
 #[1]  3  4  5  6  7  8  9 10
 
+#}
 }

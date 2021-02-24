@@ -18,12 +18,15 @@ List of countries: Australia, Belgium, Canada, France, Germany, Italy, Japan, th
     \item{\code{country}}{List of countries.}
     \item{\code{Date}}{Vector of dates.}
     \item{\code{YIESPR}}{historical yield spread for the 13 OECD countries.}
-    \item{\code{OECD_Recession}}{Historical binary variable related to historical recessions for the 13 OECD countries.}
+    \item{\code{OECD}}{Historical binary variable related to historical recessions for the 13 OECD countries.}
   }
 }
 
 \source{
 https://fred.stlouisfed.org/
 }
-
+\examples{
+data("data_panel")
+head("data_panel")
+}
 \keyword{datasets}

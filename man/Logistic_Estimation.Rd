@@ -61,6 +61,8 @@ A list with:
   \item{AIC}{a numeric vector containing the Akaike information criterion}
   \item{BIC}{a numeric vector containing the Bayesian information criterion}
   \item{R2}{a numeric vector containing the Pseudo R Square}
+  \item{index}{a numeric vector containing the estimated index}
+  \item{prob}{a numeric vector containing the estimated probabilities}
   \item{LogLik}{a numeric vector containing the Log likelihood value of the estimation}
   \item{VCM}{a numeric matrix of the Variance Covariance of the estimation}
 }
@@ -84,11 +86,7 @@ For the panel estimation, data must be stacked one after the other for each coun
 
 \examples{
 
-
-# First Example: univariate analysis of the predictive power of the yield spread
-
 # NOT RUN {
-\donttest{
 
 # Import data
 data("data_USA")
@@ -99,40 +97,18 @@ Var_X <- as.vector(data_USA$Spread)
 
 # Estimate the logit regression
 results <- Logistic_Estimation(Dicho_Y = Var_Y, Exp_X = Var_X, Intercept = TRUE,
-                      Nb_Id = 1, Lag = 1, type_model = 4)
+                      Nb_Id = 1, Lag = 1, type_model = 1)
 
 # print results
 results
-}
-
-# }
-
-
-# Second Example: panel analysis of the predictive power of the yield spread
-
-# NOT RUN {
-\donttest{
-
-# Import data
-data("data_panel")
-
-# Data process
-Var_Y <- as.vector(data_panel$OCDE)
-Var_X <- as.vector(data_panel$Spread)
-
-# Estimate the logit regression
-results <- Logistic_Estimation(Dicho_Y = Var_Y, Exp_X = Var_X, Intercept = TRUE,
-                        Nb_Id = 13, Lag = 1, type_model = 4)
-
-# print results
-results
-}
 
 # }
 
 }
 
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ Econometrics }% use one of  RShowDoc("KEYWORDS")
-\keyword{ Dichotomous }% __ONLY ONE__ keyword per line
+\keyword{Econometrics}
+\keyword{Panel}
+\keyword{Dichotomous}
+
+
+

@@ -29,11 +29,13 @@ A numeric Matrix.
 
 \examples{
 
+# NOT RUN {
+
 # Initialize the following matrix
 Matrix_example <- matrix(data=(1:10), nrow=5, ncol=2)
 
 # Use Matrix_lag
-new_matrix <- Matrix_lag(Matrix_target = Matrix_example, Nb_lag = 2, beginning = TRUE)
+new_matrix <- Matrix_lag(Matrix_target = Matrix_example, Nb_lag = 1, beginning = TRUE)
 
 new_matrix
 
@@ -44,5 +46,7 @@ new_matrix
 #[2,]    3    8
 #[3,]    4    9
 #[4,]    5   10
+
+#}
 }
 
